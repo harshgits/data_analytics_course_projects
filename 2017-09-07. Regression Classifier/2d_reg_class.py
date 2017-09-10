@@ -7,7 +7,7 @@ from itertools import product as car_pro
 x_train = np.random.multivariate_normal(mean = [0, 3], cov = [[1, 0], [0, 1]], size = 50)
 y_train = np.full(shape = (50), fill_value = 0.)
 #plotting
-fig, ax = plt.subplots()
+ax = plt.subplots()[1]
 ax.plot(x_train[y_train == 0, 0], x_train[y_train == 0, 1], marker = 'x', linestyle = '', color = 'red')
 
 #y = 1 data
@@ -35,5 +35,6 @@ ax = pickle.loads(pickle.dumps(ax))
 ax.plot(x_boundary[:, 0], x_boundary[:, 1], linestyle = '-', marker = '', color = 'black')
 
 #save and show plot
+fig = ax.get_figure()
 fig.savefig(__file__ + '.png', bbox_inches = 'tight')
 plt.show()
