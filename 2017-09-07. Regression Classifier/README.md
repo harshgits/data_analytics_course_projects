@@ -1,1 +1,1 @@
-Please see [2D_reg_class.ipynb](2D_reg_class.ipynb) for all information.
+Please see [2d_reg_class.ipynb](2d_reg_class.ipynb) for all information.
