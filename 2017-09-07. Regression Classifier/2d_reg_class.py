@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np, pickle
 from sklearn import linear_model
-from itertools import product as car_pro
 
 #y = 0 data
 x_train = np.random.multivariate_normal(mean = [0, 3], cov = [[1, 0], [0, 1]], size = 50)
