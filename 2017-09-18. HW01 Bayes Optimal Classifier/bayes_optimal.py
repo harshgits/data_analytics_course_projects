@@ -3,7 +3,7 @@ import numpy as np, pickle
 from sklearn import linear_model
 
 
-#y = 0 data
+#generate centroids
 x_train = np.random.multivariate_normal(mean = [0, 3], cov = [[1, 0], [0, 1]], size = 50)
 y_train = np.full(shape = (50), fill_value = 0.)
 #plotting
